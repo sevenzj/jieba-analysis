@@ -142,7 +142,7 @@ public class JiebaSegmenterTest extends TestCase {
                         "iphone5",
                         "鲜芋仙 3",
                         "RT @laoshipukong : 27日，",
-                        "AT&T是一件不错的公司，给你发offer了吗？",
+                        "AT&T是一件不错的公司，给你发offer了？",
                         "干脆就把那部蒙人的闲法给废了拉倒！RT @laoshipukong : 27日，全国人大常委会第三次审议侵权责任法草案，删除了有关医疗损害责任“举证倒置”的规定。在医患纠纷中本已处于弱势地位的消费者由此将陷入万劫不复的境地。 "};
         for (String sentence : bugs) {
             List<SegToken> tokens = segmenter.process(sentence, SegMode.SEARCH);
